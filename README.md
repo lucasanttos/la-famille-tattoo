@@ -1,70 +1,70 @@
-🐲 Fernandes Tattoo Studio - Landing Page
+🦁 La Famille Tattoo - Landing Page Concept
 
-Uma Landing Page de alta performance focada em conversão e experiência do usuário (UX), desenvolvida para um estúdio de tatuagem local.
+Live Demo: Clique aqui para ver o projeto online
 
-🔗 Acesse o Projeto Online (Demo)
-https://fernandeswebsite.netlify.app/
-🖼️ Preview
+📄 Sobre o Projeto
 
-<img width="1904" height="925" alt="image" src="https://github.com/user-attachments/assets/01398940-1fde-48db-a887-b9eb58d75961" />
+Este projeto é uma Landing Page de Alta Performance desenvolvida para modernizar a presença digital de um estúdio de tatuagem real.
 
-🎯 Sobre o Projeto
+O objetivo principal não foi apenas criar um design estético ("Dark & Gold"), mas resolver um problema de negócio: otimizar a triagem de atendimentos no WhatsApp.
 
-Este projeto foi desenvolvido para resolver um problema real de um estúdio de tatuagem: a desorganização no processo de agendamento e a falta de uma presença digital que transmitisse autoridade.
+Para isso, desenvolvi uma aplicação Single Page (SPA) que guia o usuário e gera, via código, um link de agendamento pré-formatado, economizando tempo da recepção e qualificando o lead.
 
-O objetivo não foi apenas criar uma página bonita, mas desenvolver uma ferramenta de conversão que filtra clientes curiosos e entrega leads qualificados diretamente no WhatsApp do tatuador, com todas as informações necessárias (incluindo referências visuais).
+🚀 Funcionalidades & Destaques Técnicos
 
-✨ Funcionalidades Técnicas & Destaques
+O diferencial deste projeto para um recrutador técnico:
 
-1. UX/UI Avançada
+1. Automação de WhatsApp (Lógica de Negócio)
 
-Navbar Dinâmica ("Zoom Out"): Implementação de lógica de estado baseada no evento de scroll. A barra de navegação reage à rolagem diminuindo a escala e aumentando a transparência (glassmorphism), melhorando a área útil de visualização.
+Ao invés de um formulário de contato tradicional (que envia e-mail), criei um sistema que captura:
 
-Scroll Reveal Animations: Desenvolvimento de um componente reutilizável (FadeInSection) utilizando a Intersection Observer API para animar elementos apenas quando entram na viewport, garantindo performance.
+Nome
 
-2. Integração e Automação
+Ideia/Estilo
 
-Smart WhatsApp Booking: O formulário não envia um simples e-mail. Ele constrói dinamicamente uma URL da API do WhatsApp contendo Nome, Ideia e Local do corpo formatados.
+Local do corpo
 
-Upload Simulation: UX aprimorada com um input de arquivo simulado que valida a seleção da imagem e instrui o usuário a enviá-la na conversa gerada, resolvendo a limitação de upload direto via link wa.me.
+Confirmação de arquivo de referência
 
-3. Performance e SEO
+O algoritmo processa esses dados e monta uma URL (wa.me) codificada, entregando a mensagem pronta no app do estúdio.
 
-SEO Local: Implementação de Meta Tags dinâmicas e JSON-LD (Schema.org) estruturado para negócios locais, visando rankeamento no Google Maps e busca orgânica.
+2. UI/UX & Animações (Custom Hooks)
 
-Otimização de Imagens: Uso de formatos modernos (WebP) e lazy loading implícito via React.
+Scroll Reveal: Implementei um IntersectionObserver personalizado dentro de um componente React reutilizável (<RevealOnScroll />). Isso garante que os elementos apareçam suavemente apenas quando entram na viewport, sem pesar o carregamento inicial.
 
-Mobile First: Design totalmente responsivo, garantindo experiência fluida em dispositivos móveis (foco principal do público-alvo).
+Navbar Responsiva: A barra de navegação reage ao scroll (window.scrollY), alterando transparência, padding e escala do logo para melhorar a área útil de leitura.
 
-🛠️ Tecnologias Utilizadas
+3. SEO & Performance
 
-Core: React.js (Vite)
+Estrutura semântica de HTML5.
 
-Estilização: Tailwind CSS (para agilidade e consistência de design system)
+Uso de Meta Tags e Open Graph para garantir que o link seja visualmente atrativo ao ser compartilhado em redes sociais.
 
-Ícones: Lucide React
+Pontuação alta no Lighthouse devido ao uso do Vite e carregamento otimizado de fontes.
 
-Deploy/CI: Netlify
+🛠 Tecnologias Utilizadas
 
-Controle de Versão: Git & GitHub
+React.js: Estruturação da interface baseada em componentes funcionais.
 
-🧠 Desafios e Aprendizados
+Tailwind CSS v3: Estilização utility-first para agilidade e consistência de design system (paleta de cores customizada).
 
-Durante o desenvolvimento, um dos principais desafios foi gerenciar a experiência do usuário no upload de arquivos sem um backend dedicado.
+Lucide React: Ícones leves e otimizados via SVG.
 
-Solução: Criei uma interface de feedback visual onde o ícone de upload muda para um "Check" verde ao selecionar o arquivo, e adicionei lógica condicional na string de mensagem do WhatsApp para avisar o tatuador que existe uma referência a ser enviada.
+Vite: Build tool para ambiente de desenvolvimento rápido e bundle otimizado.
 
-Isso demonstrou a importância de pensar na Jornada do Usuário para contornar limitações técnicas de forma elegante.
+📸 Screenshots
 
-🚀 Como rodar o projeto localmente
+(Espaço reservado: Adicione aqui prints do site no Desktop e no Mobile)
+
+💻 Como rodar o projeto localmente
 
 Pré-requisitos: Node.js instalado.
 
 # 1. Clone o repositório
-git clone [https://github.com/SEU-USUARIO/fernandes-tattoo.git](https://github.com/SEU-USUARIO/fernandes-tattoo.git)
+git clone [https://github.com/SEU_USUARIO/la-famille-tattoo.git](https://github.com/SEU_USUARIO/la-famille-tattoo.git)
 
 # 2. Entre na pasta
-cd fernandes-tattoo
+cd la-famille-tattoo
 
 # 3. Instale as dependências
 npm install
@@ -73,9 +73,20 @@ npm install
 npm run dev
 
 
+💡 Aprendizados
+
+Durante o desenvolvimento deste projeto, aprofundei meus conhecimentos em:
+
+Componentização Eficiente: Como quebrar uma Landing Page em blocos lógicos sem "prop drilling" excessivo.
+
+Mobile First: O CSS foi pensado primeiramente para telas pequenas, garantindo responsividade total.
+
+Deploy Contínuo: Configuração de pipeline de entrega automática via Netlify/GitHub.
+
 📬 Contato
 
-Estou em busca de oportunidades como Desenvolvedor Front-end Júnior. Se você procura alguém apaixonado por criar interfaces que geram valor real, vamos conversar!
+Estou em busca da minha primeira oportunidade como Desenvolvedor Front-end Júnior. Se você gostou do código e da solução, vamos conversar!
 
-
-Desenvolvido com 💙 por [Lucas Santos]
+[Seu Nome]
+[Seu LinkedIn]
+[Seu E-mail]
